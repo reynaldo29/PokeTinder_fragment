@@ -1,4 +1,4 @@
-package com.contreras.poketinder.data
+package com.contreras.poketinder.data.model
 
 import java.io.Serializable
 

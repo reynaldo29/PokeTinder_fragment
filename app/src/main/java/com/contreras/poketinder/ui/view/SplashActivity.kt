@@ -1,11 +1,8 @@
-package com.contreras.poketinder.activity
+package com.contreras.poketinder.ui.view
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.provider.AlarmClock
-import androidx.appcompat.app.AppCompatActivity
-import com.contreras.poketinder.R
 import com.contreras.poketinder.databinding.ActivitySplashBinding
 import com.contreras.poketinder.util.SharedPreferenceUtil
 

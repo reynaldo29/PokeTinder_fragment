@@ -1,4 +1,4 @@
-package com.contreras.poketinder.activity
+package com.contreras.poketinder.ui.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import com.contreras.poketinder.R
-import com.contreras.poketinder.adapter.OnboardingAdapter
+import com.contreras.poketinder.ui.adapter.OnboardingAdapter
 import com.contreras.poketinder.databinding.ActivityOnboardingBinding
 import com.contreras.poketinder.util.Mock
 import com.contreras.poketinder.util.SharedPreferenceUtil
@@ -37,7 +37,7 @@ class OnboardingActivity : BaseActivity<ActivityOnboardingBinding>(ActivityOnboa
 
         binding.layBackButton.setOnClickListener{
             sharedPreferenceUtil.saveIntroShow()
-            startActivity(Intent(this,RegisterActivity::class.java))
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
     private fun setupIndicator(){
