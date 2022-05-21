@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.contreras.poketinder.R
-import com.contreras.poketinder.data.Onboarding
+import com.contreras.poketinder.data.model.Onboarding
 import com.contreras.poketinder.databinding.ItemOnboardingBinding
 import com.contreras.poketinder.util.inflate
 
@@ -26,7 +26,7 @@ class OnboardingAdapter(val list:List<Onboarding>):
     class OnboardingHolder(view: View): RecyclerView.ViewHolder(view){
         private val binding = ItemOnboardingBinding.bind(view)
 
-        fun bind(onboarding:Onboarding){
+        fun bind(onboarding: Onboarding){
             with(binding){
                 hsv.setOnTouchListener{_,_ ->true}
                 tvTitle.text=onboarding.title

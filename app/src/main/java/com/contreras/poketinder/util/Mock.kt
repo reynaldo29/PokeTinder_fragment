@@ -1,6 +1,6 @@
 package com.contreras.poketinder.util
 
-import com.contreras.poketinder.data.Onboarding
+import com.contreras.poketinder.data.model.Onboarding
 
 class Mock {
     fun getOnboarding() = listOf(

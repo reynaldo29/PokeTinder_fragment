@@ -4,12 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Aaron/AndroidStudioProjects/PokeTinder/app/src/main/res/layout/activity_login.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/Aaron/AndroidStudioProjects/PokeTinder/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Aaron/AndroidStudioProjects/PokeTinder/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Aaron/AndroidStudioProjects/PokeTinder/app/src/main/res/layout/activity_onboarding.xml" value="0.25" />
         <entry key="..\:/Users/Aaron/AndroidStudioProjects/PokeTinder/app/src/main/res/layout/activity_register.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Aaron/AndroidStudioProjects/PokeTinder/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/Aaron/AndroidStudioProjects/PokeTinder/app/src/main/res/layout/item_back_button.xml" value="0.33" />
         <entry key="..\:/Users/Aaron/AndroidStudioProjects/PokeTinder/app/src/main/res/layout/item_onboarding.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Aaron/AndroidStudioProjects/PokeTinder/app/src/main/res/layout/item_pokemon.xml" value="0.125" />
         <entry key="..\:/Users/Aaron/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/activity_list_item.xml" value="0.36666666666666664" />
       </map>
     </option>

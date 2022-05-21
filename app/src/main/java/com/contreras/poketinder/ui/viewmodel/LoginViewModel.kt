@@ -1,4 +1,4 @@
-package com.contreras.poketinder.viewModel
+package com.contreras.poketinder.ui.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData

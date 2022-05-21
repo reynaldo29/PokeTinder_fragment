@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.contreras.poketinder.databinding.ActivityRegisterBinding
-import com.contreras.poketinder.viewModel.RegisterViewModel
+import com.contreras.poketinder.ui.viewmodel.RegisterViewModel
 
 class RegisterActivity : BaseActivity<ActivityRegisterBinding>(ActivityRegisterBinding::inflate){
     private  lateinit var registerViewModel: RegisterViewModel

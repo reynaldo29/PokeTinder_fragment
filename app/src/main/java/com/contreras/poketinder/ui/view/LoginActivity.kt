@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.contreras.poketinder.databinding.ActivityLoginBinding
-import com.contreras.poketinder.viewModel.LoginViewModel
+import com.contreras.poketinder.ui.viewmodel.LoginViewModel
 
 class LoginActivity: BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::inflate) {
     private lateinit var loginViewModel: LoginViewModel

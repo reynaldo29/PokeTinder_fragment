@@ -1,4 +1,4 @@
-package com.contreras.poketinder.data
+package com.contreras.poketinder.data.model
 
 data class Onboarding(
     val id: Int,
