@@ -13,12 +13,8 @@ m
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 s
 Capp/src/main/java/com/contreras/poketinder/ui/view/LoginActivity.kt,e\5\e5cea3f05e2d45d395a6cdc7fd726b2afdb315c2
-u
-Eapp/src/main/java/com/contreras/poketinder/data/network/PokemonApi.kt,5\3\53a7912f543e55de339ed16208232ad2653dc570
 v
 Fapp/src/main/java/com/contreras/poketinder/ui/view/RegisterActivity.kt,a\5\a514d39331707cc4ee3533ed17b787758cf478be
-u
-Eapp/src/main/java/com/contreras/poketinder/data/model/PokemonModel.kt,2\1\21c40e94b7b204d62e0ffd473c2e882759727c07
 |
 Lapp/src/main/java/com/contreras/poketinder/ui/viewmodel/RegisterViewModel.kt,2\0\20a9e1db5bf93ff8e35d5b50e8847ac68df3cc3c
 y
@@ -31,5 +27,11 @@ n
 >app/src/main/java/com/contreras/poketinder/PokeTinderNewApp.kt,5\f\5f05e2db750e4aa2be71f757e5d7b014a402f1aa
 s
 Capp/src/main/java/com/contreras/poketinder/data/model/Onboarding.kt,e\e\eeafe087291186a22324ceab36bbcce035597523
-y
-Iapp/src/main/java/com/contreras/poketinder/data/model/PokemonListModel.kt,9\0\902a5100ae4e735046579e52196be590759d25e4
+r
+Bapp/src/main/java/com/contreras/poketinder/ui/view/MainActivity.kt,8\2\822ce1afb11842a2869d6502489bcb2f20dc6d53
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+x
+Happ/src/main/java/com/contreras/poketinder/ui/viewmodel/InfoViewModel.kt,f\e\fe237d5ee6d9ca71dca9d924e07f982f78bb0a6a
+r
+Bapp/src/main/java/com/contreras/poketinder/ui/view/BaseFragment.kt,c\2\c2e6a1a5c801a5ba51e0fb65d413cc41b6645076

@@ -1,5 +1,6 @@
 package com.contreras.poketinder.ui.view
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,6 +15,7 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DefaultItemAnimator
 import com.contreras.poketinder.R
 import com.contreras.poketinder.databinding.FragmentHomeBinding
+import com.contreras.poketinder.domain.model.MyPokemon
 import com.contreras.poketinder.domain.model.Pokemon
 import com.contreras.poketinder.ui.adapter.PokemonAdapter
 import com.contreras.poketinder.ui.viewmodel.HomeViewModel
@@ -117,7 +119,15 @@ PokemonAdapter.Callback{
     }
 
     override fun onCardSwiped(direction: Direction?) {
-        //TODO("Not yet implemented")
+        if(direction == Direction.Right){
+            val pokemon = adapter.list[manager.topPosition -1]
+            val myPokemon = MyPokemon(
+                name = pokemon.name,
+                image = pokemon.getPokemonImage(),
+                idPokemon = pokemon.getPokemonId()
+            )
+                homeViewModel.savePokemonUseCase(myPokemon)
+        }
     }
 
     override fun onCardRewound() {
@@ -137,7 +147,9 @@ PokemonAdapter.Callback{
     }
 
     override fun onClickPokemonInformation(pokemon: Pokemon) {
-        //TODO("Not yet implemented")
+        val intent = Intent(context,PokemonDetailActivity::class.java)
+        intent.putExtra("ID_POkEMON",pokemon.getPokemonId())
+        startActivity(intent)
     }
 
 
