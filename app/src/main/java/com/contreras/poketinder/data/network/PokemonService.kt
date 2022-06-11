@@ -1,5 +1,6 @@
 package com.contreras.poketinder.data.network
 
+import com.contreras.poketinder.data.model.PokemonDetailModel
 import com.contreras.poketinder.data.model.PokemonListModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -12,6 +13,13 @@ class PokemonService @Inject constructor(private val pokemonApi:PokemonApi){
         return withContext(Dispatchers.IO){
         val res:Response<PokemonListModel> = pokemonApi.getPokemons()
         res.body()!!
+        }
+
+    }
+    suspend fun getPokemonById(id:String):PokemonDetailModel{
+        return withContext(Dispatchers.IO){
+            val res:Response<PokemonDetailModel> =pokemonApi.getDetailPokemon(id)
+            res.body()!!
         }
     }
 

@@ -14,6 +14,7 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DefaultItemAnimator
 import com.contreras.poketinder.R
+import com.contreras.poketinder.data.PokemonRepository
 import com.contreras.poketinder.databinding.FragmentHomeBinding
 import com.contreras.poketinder.domain.model.MyPokemon
 import com.contreras.poketinder.domain.model.Pokemon
@@ -148,7 +149,8 @@ PokemonAdapter.Callback{
 
     override fun onClickPokemonInformation(pokemon: Pokemon) {
         val intent = Intent(context,PokemonDetailActivity::class.java)
-        intent.putExtra("ID_POkEMON",pokemon.getPokemonId())
+        intent.putExtra("ID_POKEMON",pokemon.getPokemonId())
+
         startActivity(intent)
     }
 

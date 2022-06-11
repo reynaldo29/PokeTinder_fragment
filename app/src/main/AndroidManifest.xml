@@ -15,6 +15,11 @@
             android:exported="false"
             />
         <activity
+            android:name=".ui.view.PokemonDetailActivity"
+            android:exported="false"
+            />
+
+        <activity
             android:name="com.contreras.poketinder.ui.view.LoginActivity"
             android:exported="false" />
         <activity

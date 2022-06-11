@@ -14,5 +14,5 @@ interface PokemonApi {
     @GET("{pokemon_id}")
     suspend fun getDetailPokemon(
         @Path("pokemon_id") pokemonId:String
-    ):PokemonDetailModel
+    ):Response<PokemonDetailModel>
 }
