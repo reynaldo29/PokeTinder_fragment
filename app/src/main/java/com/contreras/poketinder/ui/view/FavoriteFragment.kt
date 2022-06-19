@@ -27,7 +27,13 @@ class FavoriteFragment:BaseFragment<FragmentFavoriteBinding>(FragmentFavoriteBin
         binding.rvPokemons.adapter=adapter
 
         viewModel.myPokemonList.observe(this){
+            listMyPokemon.clear()
             listMyPokemon.addAll(it)
+            adapter.notifyDataSetChanged()
+        }
+        binding.floatingActionDelete.setOnClickListener{
+            viewModel.deleteAllPokemon()
+            listMyPokemon.clear()
             adapter.notifyDataSetChanged()
         }
     }

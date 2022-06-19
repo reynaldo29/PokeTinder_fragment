@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.contreras.poketinder.domain.model.MyPokemon
+import com.contreras.poketinder.domain.usercase.DeleteAllMyPokemonsUseCase
 import com.contreras.poketinder.domain.usercase.GetMyPokemonsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -11,7 +12,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class FavoriteViewModel @Inject constructor(
-    private val getMyPokemonsUseCase: GetMyPokemonsUseCase
+    private val getMyPokemonsUseCase: GetMyPokemonsUseCase,
+    private val deleteAllMyPokemonsUseCase: DeleteAllMyPokemonsUseCase
 ) :ViewModel(){
     val myPokemonList = MutableLiveData<List<MyPokemon>>()
     val isLoading = MutableLiveData<Boolean>()
@@ -20,10 +22,16 @@ class FavoriteViewModel @Inject constructor(
         viewModelScope.launch {
             isLoading.postValue(true)
             val result = getMyPokemonsUseCase()
-            if (result.isNotEmpty()){
+            //if (result.isNotEmpty()){
                 myPokemonList.postValue(result)
                 isLoading.postValue(false)
-            }
+            //}
+        }
+    }
+
+    fun deleteAllPokemon(){
+        viewModelScope.launch {
+            deleteAllMyPokemonsUseCase()
         }
     }
 }

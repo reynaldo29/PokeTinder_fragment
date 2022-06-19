@@ -61,8 +61,14 @@
                     android:shadowRadius="2"
                     android:textSize="25sp"
                     android:textStyle="bold"
-                    tools:text="Pikachu, 32" />
+                    tools:text="Pikachu, 32"
 
+                    />
+                <co.ankurg.expressview.ExpressView
+                    android:id="@+id/likeButton"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    tools:ignore="MissingConstraints" />
                 <ImageView
                     android:id="@+id/ivVerified"
                     android:visibility="gone"

@@ -35,5 +35,10 @@ class PokemonRepository @Inject constructor(
         pokemonDao.insert(myPokemon)
     }
 
+    suspend fun deleteAllmyPokemon(){
+        pokemonDao.deleteTable()
+    }
+
+
 
 }
