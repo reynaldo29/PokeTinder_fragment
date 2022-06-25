@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "293326411725",
+    "project_id": "poketindernew-ad7a4",
+    "storage_bucket": "poketindernew-ad7a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293326411725:android:4fc23ac6d191eabf3bd684",
+        "android_client_info": {
+          "package_name": "com.contreras.poketinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293326411725-cq9imstrsvjf14uol5ogqv8rmk91a8ua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjyHBTMMQZr4AsI_hFyYNa8nts2qll7xM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293326411725-cq9imstrsvjf14uol5ogqv8rmk91a8ua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

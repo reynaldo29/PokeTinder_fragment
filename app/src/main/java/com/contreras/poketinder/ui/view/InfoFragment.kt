@@ -8,27 +8,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.fragment.app.viewModels
 import com.contreras.poketinder.R
 import com.contreras.poketinder.databinding.FragmentInfoBinding
 import com.contreras.poketinder.ui.viewmodel.InfoViewModel
 
 class InfoFragment : BaseFragment<FragmentInfoBinding>(FragmentInfoBinding::inflate) {
 
-
-    private lateinit var viewModel: InfoViewModel
+    private val viewModel: InfoViewModel by viewModels()
     private lateinit var webView: WebView
-    private var url ="https://pokemongolive.com/es/"
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        webView.saveState(outState)
-        super.onSaveInstanceState(outState)
-    }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        url = "https://pokemongolive.com/es/"
 
         webView = binding.wvMain
 
@@ -36,10 +27,9 @@ class InfoFragment : BaseFragment<FragmentInfoBinding>(FragmentInfoBinding::infl
 
         webView.webViewClient= PokemonWebClient()
 
-        savedInstanceState?.let{
-            webView.restoreState(it)
-        }?:webView.loadUrl(url)
-
+        viewModel.getUrlPokemon().observe(viewLifecycleOwner){
+            webView.loadUrl(it)
+        }
 
     }
 
